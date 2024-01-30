@@ -83,7 +83,7 @@ async function run() {
     // Bookings routes
 
     app.get("/bookings", verifyJWT, async (req, res) => {
-      console.log("came back verify JWT" );
+      console.log("came back verify JWT");
       let query = {};
       if (req.query?.email) {
         query = { email: req.query.email };
